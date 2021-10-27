@@ -24,7 +24,8 @@ form {
     justify-content: center;
     align-items: center;
 }
-form input{
+
+form input {
     margin-left: 1rem;
 }
 
@@ -146,20 +147,33 @@ select {
     color: var(--primary-color);
     cursor: pointer;
     pointer-events: none;
-    padding: 0.8rem;
+    padding: 0.9rem;
     font-size: 1rem;
 }
-@media screen and (min-width:800px){
-.select:hover::after{
-    background: var(--primary-color);
-    color: var(--ow-color);
+
+@media screen and (min-width:800px) {
+    .select:hover::after {
+        background: var(--primary-color);
+        color: var(--ow-color);
+    }
 }
-}
-@media screen and (max-width:800px){
-    form input{
+
+@media screen and (max-width:800px) {
+    form input {
         margin-left: 1rem;
     }
-    .todo-list{
+
+    .todo-list {
         min-width: 80%;
+    }
+
+    .select::after {
+        padding: 1rem;
+        font-size: 1rem;
+        color: var(--ow-color);
+        background-color: var(--primary-color);
+    }
+    select{
+        width: 3rem;
     }
 }
