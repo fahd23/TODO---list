@@ -171,7 +171,7 @@ select {
         padding: 1rem;
         font-size: 1rem;
         color: var(--ow-color);
-        background-color: var(--primary-color);
+        background-color:#3ac098;
     }
     select{
         width: 3rem;
