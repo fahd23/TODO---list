@@ -24,6 +24,9 @@ form {
     justify-content: center;
     align-items: center;
 }
+form input{
+    margin-left: 1rem;
+}
 
 form input,
 form button {
@@ -146,13 +149,16 @@ select {
     padding: 0.8rem;
     font-size: 1rem;
 }
-
+@media screen and (min-width:800px){
 .select:hover::after{
     background: var(--primary-color);
     color: var(--ow-color);
 }
-
-@media screen and (max-width:600px){
+}
+@media screen and (max-width:800px){
+    form input{
+        margin-left: 1rem;
+    }
     .todo-list{
         min-width: 80%;
     }
